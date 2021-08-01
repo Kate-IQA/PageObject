@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/ux8wrc42s39mrowc?svg=true)](https://ci.appveyor.com/project/Kate-IQA/pageobject)
