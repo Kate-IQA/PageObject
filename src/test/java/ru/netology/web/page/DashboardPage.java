@@ -13,14 +13,16 @@ public class DashboardPage {
         firstCardButton.click();
         return new MoneyTransferPage();
     }
+
     public MoneyTransferPage clickSecondCardToRefill() {
         secondCardButton.click();
         return new MoneyTransferPage();
     }
+
     public int getBalance(String currentBalance) {
         val middleString = currentBalance.split(",");
         val arraysLength = middleString[middleString.length - 1];
-        val value = arraysLength.replace("баланс:", "").replace("р.","").replace("Пополнить", "").strip();
+        val value = arraysLength.replace("баланс:", "").replace("р.", "").replace("Пополнить", "").strip();
         return Integer.parseInt(value);
     }
 

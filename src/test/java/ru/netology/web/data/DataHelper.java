@@ -6,11 +6,13 @@ public class DataHelper {
     DataHelper() {
 
     }
+
     @Value
     public static class AuthInfo {
         private String login;
         private String password;
     }
+
     public static AuthInfo getAuthInfo() {
         return new AuthInfo("vasya", "qwerty123");
     }
@@ -40,6 +42,7 @@ public class DataHelper {
     public static CardInfo getSecondCardInfo() {
         return new CardInfo("5559000000000002");
     }
+
     public static int checkBalanceOfCardRecharged(int balance, int amountUpdated) {
         return balance - amountUpdated;
     }
